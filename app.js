@@ -1,5 +1,5 @@
 'use strict';
-const PAGE_ACCESS_TOKEN = process.env.AAHFzsBUAFcBALkZAuEZCdXBLOZAPlg5AIiBVoYYdS3cfCqmlGCwhQ3tccK8DN07fux2GH9K0IsTvRPRmie03sBFJ4bZAZB0XLIeTJMQGX8f74m3vuGqDN7zharzaZAMGd4kZAf3ZBZCZB7WwJ5rqvyJCjsavZBIgyK8PT65hPPdBiSagZDZD;
+const PAGE_ACCESS_TOKEN = process.env.EAAHFzsBUAFcBALyYa97UV94hKcoLB8m8PfHXZCESehwnSEW2qwnClFVSxeZAoCIFz6v4cjw8ZBRG32NskyvW5TsFjVZAeoCGgStPKeM7yd4mE709Nj2fpvjivBrZBKYjw9fTMyJVp5ZB8gY72URoUFdTWaECbGXfdSRAAHEkUGngZDZD;
 // Imports dependencies and set up http server
 const 
   request = require('request'),
@@ -19,7 +19,7 @@ app.post('/webhook', (req, res) => {
   // Check the webhook event is from a Page subscription
   if (body.object === 'page') {
 
-    body.entry.forEach(function(entry) {
+    body.entry.forEach(function(entry) { 
 
       // Gets the body of the webhook event
       let webhook_event = entry.messaging[0];
